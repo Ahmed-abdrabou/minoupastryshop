@@ -8,12 +8,17 @@
 }
 
 .SpecialOccasionCakes_Cards {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
   max-width: 100%;
+}
+@media (max-width: 767px) {
+  .SpecialOccasionCakes_Cards {
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+  }
 }
 .SpecialOccasionCakes_Card {
   margin: 5px;
@@ -51,12 +56,12 @@
 @media (max-width: 767px) {
   .SpecialOccasionCakes_Card .Card_Title {
     margin: 0px;
-    font-size: 0.6em;
+    font-size: 1.5em;
   }
 
   .Card_Descrition {
     margin: 0px;
-    font-size: 0.3em;
+    font-size: 0.7em;
     padding: 0.5rem 0rem;
   }
 }

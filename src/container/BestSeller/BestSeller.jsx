@@ -6,7 +6,7 @@ import "./BestSeller.css";
 import { BestSeller_img } from "../../constants/BestSeller_img";
 
 const BestSeller = () => (
-  <div className="app__content BestSeller">
+  <div className="app__content BestSeller" id="BestSeller">
     <div className="section_header">
       <h1>BestSeller</h1>
     </div>

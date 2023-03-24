@@ -52,10 +52,24 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 650px) {
+  .app__navbar-logo {
+    top: 30px;
+  }
+}
 .app__navbar-logo img {
   width: 150px;
 }
-
+@media screen and (max-width: 650px) {
+  .app__navbar-logo img {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .app__navbar-logo img {
+    width: 80px;
+  }
+}
 .app__navbar-links {
   flex: 1;
   display: flex;
@@ -100,12 +114,6 @@
 @media screen and (max-width: 650px) {
   .app__navbar {
     padding: 1rem;
-  }
-  .app__navbar-logo img {
-    width: 110px;
-  }
-  .app__navbar-logo {
-    top: 20px;
   }
 }
 .app__navbar-cart {

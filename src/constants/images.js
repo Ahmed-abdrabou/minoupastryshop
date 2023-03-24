@@ -70,6 +70,7 @@ import ProductsItems_img_eclairs_salted from "../assets/ProductsItems_img_eclair
 import ProductsItems_img_eclairs_coffee from "../assets/ProductsItems_img_eclairs_coffee.jpg";
 import ProductsItems_img_eclairs_lemon from "../assets/ProductsItems_img_eclairs_lemon.jpg";
 
+import whatsappAvater from "../assets/whatsappAvater.png";
 export default {
   logo,
   logo2,
@@ -143,4 +144,6 @@ export default {
   ProductsItems_img_eclairs_salted,
   ProductsItems_img_eclairs_coffee,
   ProductsItems_img_eclairs_lemon,
+
+  whatsappAvater,
 };

@@ -8,7 +8,7 @@
 .CheckOut_container input {
   margin: 4px;
   padding: 5px;
-  width: 300px;
+  max-width: 300px;
 }
 .CheckOut_container textarea {
   margin: 4px;
@@ -16,7 +16,7 @@
 
   min-height: 100px;
   max-height: 100px;
-  min-width: 300px;
+  /* min-width: 200px; */
   max-width: 300px;
 }
 .CheckOut_container {
@@ -34,7 +34,7 @@
   .CheckOut_form_container {
     flex-wrap: wrap;
   }
-  .customerInfo {
+  .CheckOut_customerInfo {
     margin: 20px;
   }
   .CheckOut_form_Control .custom__button {
@@ -117,6 +117,13 @@
   width: 300px;
   padding: 9px 0px;
 }
+@media screen and (max-width: 769px) {
+  .CheckOut_item {
+    width: fit-content;
+
+    padding: 0px;
+  }
+}
 .CheckOut_item:not(:last-of-type) {
   border-bottom: 1px solid black;
 }
@@ -138,7 +145,7 @@
 .CheckOut_total p {
   padding: 3px;
 }
-.customerInfo {
+.CheckOut_form_container .CheckOut_customerInfo {
   flex: 1;
 
   display: flex;
@@ -151,10 +158,10 @@
   margin: 10px;
   padding: 30px;
 }
-.customerInfo p {
+.CheckOut_customerInfo p {
   margin: 5px;
 }
-.customerInfo button {
+.CheckOut_customerInfo button {
   font-family: var(--font-roboto);
 
   background-color: var(--color-crimson);
@@ -174,4 +181,7 @@
   cursor: pointer;
 
   text-align: center;
+}
+.order_id > input {
+  width: 200px;
 }

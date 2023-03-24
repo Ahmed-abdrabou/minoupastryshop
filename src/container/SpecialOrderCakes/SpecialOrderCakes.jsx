@@ -6,7 +6,6 @@ import { SpecialOrderCakesImages } from "../../constants/SpecialOrderCakesImages
 
 const SpecialOrderCakes = () => (
   <div className="app__content SpecialOrderCakesImage">
-    fsdgfdhgfsd
     <div className="SpecialOrderCakes_container">
       {SpecialOrderCakesImages.map((img, index) => {
         return (

@@ -1,75 +1,60 @@
-.cartItem_card {
+.cartItem_container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 10px;
+  padding: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 769px) {
-  .cartItem {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
+  .cartItem_container {
+    scale: 80%;
+    margin: -30px;
   }
 }
-.cartItem {
+@media (max-width: 480px) {
+  .cartItem_container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+  }
+}
+.cartItem_container .cartItem_img-container {
+  width: 150px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.cartItem_container .cartItem_img-container img {
+  width: 150px;
+}
+.description {
   display: flex;
-  align-items: center;
-
+  flex-direction: column;
   margin: 20px;
 }
-
-.cartItem img {
-  max-width: 150px;
-  border-radius: 20%;
-  padding-right: 10px;
-}
-
-.cartItem .description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 10px;
-
-  width: 100%;
-}
-.cartItem_name {
-  color: var(--pink-color);
-
-  font-size: 20px;
-  padding: 5px;
-}
-.cartItem_price {
-  font-size: 10px;
-  padding: 5px;
-}
-.countHandler {
+.description_text {
   margin: 10px;
 }
-@media screen and (max-width: 769px) {
-  .countHandler {
-    margin: 5px;
-  }
-}
-.countHandler input {
-}
-.countHandler .custom__button {
-  padding: 1px 5px;
-  width: 25px;
-}
-
-@media screen and (max-width: 769px) {
-  .cartItem_card .Product_container .description .product_Price {
-    margin: 0px;
-    font-size: 0.5rem;
-    padding: 0px;
-  }
-}
-
-.cartItem_comment {
-  max-width: 100%;
-}
-.countHandler input {
-  width: 40px;
+.countHandler {
+  display: flex;
   text-align: center;
-  font-weight: bolder;
+}
+.countHandler input {
+  text-align: center;
+  width: 50px;
+  margin: 0 20px;
   border: none;
+}
+.countHandler span {
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 30px;
 }

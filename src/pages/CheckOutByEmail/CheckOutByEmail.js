@@ -89,7 +89,6 @@ export const CheckOutByEmail = () => {
                           name="ProductId"
                           value={product.id}
                         />
-
                         <p className="ItemName">
                           <big>Item: </big> {product.productName}{" "}
                           {product.productDescription}
@@ -161,7 +160,7 @@ export const CheckOutByEmail = () => {
                 />
               </div>
             </div>
-            <div className="customerInfo">
+            <div className="CheckOut_customerInfo">
               <p>Please put your Info: </p>
               <input
                 type="text"
@@ -187,12 +186,15 @@ export const CheckOutByEmail = () => {
                 name="Notes"
                 placeholder="please let me know if you have any comment:"
               />
-              <input
-                type="text"
-                name="OrderId"
-                value={"Your Order Id : " + randomId()}
-                style={{ border: "none" }}
-              />
+              <div className="order_id">
+                <input
+                  type="text"
+                  name="OrderId"
+                  value={"Your Order Id : " + randomId()}
+                  style={{ border: "none" }}
+                />
+              </div>
+
               <button type="submit">Send Order To Kitchen</button>
               {/* <span className="custom__button" onClick={sendEmail}>
                 sss

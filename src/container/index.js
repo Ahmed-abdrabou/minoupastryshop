@@ -7,7 +7,6 @@ import SpecialOccasionCakes from "./SpecialOccasionCakes/SpecialOccasionCakes";
 import BirthdayCakes from "./BirthdayCakes/BirthdayCakes";
 import WeddingCakes from "./WeddingCakes/WeddingCakes";
 import MiniCakes from "./MiniCakes/MiniCakes";
-import MinouBox from "./MinouBox/MinouBox";
 
 export {
   MainDiscountBar,
@@ -19,5 +18,4 @@ export {
   BirthdayCakes,
   WeddingCakes,
   MiniCakes,
-  MinouBox,
 };

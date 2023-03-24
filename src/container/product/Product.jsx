@@ -12,7 +12,8 @@ export const Product = (props) => {
     price,
     productImage,
   } = props.data;
-  const { addToCart, cartItems, removeFromCart } = useContext(ShopContext);
+  const { addToCart, cartItems, removeFromCart, updateCartItemCount } =
+    useContext(ShopContext);
 
   const cartItemCount = cartItems[id];
 
@@ -29,9 +30,24 @@ export const Product = (props) => {
         </p>
       </div>
       <div className="product_buttons_handler">
-        <span className="custom__button " onClick={() => addToCart(id)}>
-          Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
-        </span>
+        {cartItemCount > 0 ? (
+          <div className="product_countHandler">
+            <span className="custom__button" onClick={() => removeFromCart(id)}>
+              -
+            </span>
+            <input
+              value={cartItems[id]}
+              onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+            />
+            <span className="custom__button" onClick={() => addToCart(id)}>
+              +
+            </span>
+          </div>
+        ) : (
+          <span className="custom__button " onClick={() => addToCart(id)}>
+            Add To Cart
+          </span>
+        )}
         {/* <span>{cartItemCount}</span>
         <span
           className="custom__button product_button"

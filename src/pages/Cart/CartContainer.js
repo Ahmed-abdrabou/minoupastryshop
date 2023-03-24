@@ -27,7 +27,7 @@ export const CartContainer = () => {
         <h1>Your Shooping Cart</h1>
       </div>
       <div className="CartContainer">
-        <div className="ProductsItems_container ">
+        <div className="Items">
           {ProductsItems_img.map((product) => {
             if (cartItems[product.id] !== 0) {
               return <CartItem data={product} />;
@@ -66,7 +66,7 @@ export const CartContainer = () => {
             {/* <input type="text" value={Math.random().toString()} /> */}
           </div>
         ) : (
-          <h1>vv </h1>
+          <h1>Shooping Cart is Empty</h1>
         )}
       </div>
     </div>

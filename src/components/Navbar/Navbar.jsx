@@ -28,13 +28,14 @@ const Navbar = () => {
       </Link>
       <ul className="app__navbar-links">
         <li>
-          <Link to="/"> Home </Link>
+          <Link to="/">
+            <a href="#Header">Home</a>
+          </Link>
         </li>
         <li>
-          <Link to="/CheckOutByEmail"> CheckOut </Link>
-        </li>
-        <li>
-          <a href="#Cakes">Cakes</a>
+          <Link to="/OrderNow">
+            <a href="#OrderNow">Order A Cake</a>
+          </Link>
         </li>
       </ul>
       <Link to="/">
@@ -44,10 +45,12 @@ const Navbar = () => {
       </Link>
       <ul className="app__navbar-links">
         <li>
-          <a href="#menu">Menu</a>
+          <Link to="/MinouBox">
+            <a href="#MinouBox">MinouBox</a>
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#BestSeller">Best Seller</a>
         </li>
       </ul>
       <div className="app__navbar-cart">
