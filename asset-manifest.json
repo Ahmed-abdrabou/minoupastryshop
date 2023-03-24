@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0bd6f451.css",
-    "main.js": "/static/js/main.ecc81865.js",
+    "main.js": "/static/js/main.cdf30392.js",
     "static/media/ProductsItems_img_summer_cookies_12_pics.jpg": "/static/media/ProductsItems_img_summer_cookies_12_pics.db24336bff62ee4ef27f.jpg",
     "static/media/ProductsItems_img_summer_cookies_25_pics.jpg": "/static/media/ProductsItems_img_summer_cookies_25_pics.db24336bff62ee4ef27f.jpg",
     "static/media/Sesson_img2.jpg": "/static/media/Sesson_img2.198543770e9db070ae2a.jpg",
@@ -61,10 +61,10 @@
     "static/media/cart.svg": "/static/media/cart.92ef1eb8f6760643f59e59cdee8425e2.svg",
     "index.html": "/index.html",
     "main.0bd6f451.css.map": "/static/css/main.0bd6f451.css.map",
-    "main.ecc81865.js.map": "/static/js/main.ecc81865.js.map"
+    "main.cdf30392.js.map": "/static/js/main.cdf30392.js.map"
   },
   "entrypoints": [
     "static/css/main.0bd6f451.css",
-    "static/js/main.ecc81865.js"
+    "static/js/main.cdf30392.js"
   ]
 }
