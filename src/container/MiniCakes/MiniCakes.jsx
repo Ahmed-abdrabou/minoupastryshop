@@ -5,7 +5,7 @@ import "./MiniCakes.css";
 import { MiniCakes_img } from "../../constants/MiniCakes_img";
 
 const MiniCakes = () => (
-  <div className="section_container Small_flex_column_reverse MiniCakes">
+  <div className="section__padding section_container Small_flex_column_reverse MiniCakes">
     <div className="section_images_container">
       {MiniCakes_img.map((card, index) => {
         return (

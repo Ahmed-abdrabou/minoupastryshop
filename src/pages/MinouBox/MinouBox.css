@@ -6,6 +6,10 @@
   place-items: center;
 } */
 
+.MinouBox {
+  background-color: var(--section-background);
+}
+
 .ProductsItems_container {
   display: grid;
   justify-content: center;

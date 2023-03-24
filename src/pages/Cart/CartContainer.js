@@ -22,7 +22,7 @@ export const CartContainer = () => {
   const DeliveryFess = 30;
 
   return (
-    <div className="app__container section__padding Cart">
+    <div className="app__container section__padding Cart" id="ShoppingCart">
       <div className="CartContainer_header">
         <h1>Your Shooping Cart</h1>
       </div>

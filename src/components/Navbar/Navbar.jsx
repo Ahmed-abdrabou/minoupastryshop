@@ -28,14 +28,10 @@ const Navbar = () => {
       </Link>
       <ul className="app__navbar-links">
         <li>
-          <Link to="/">
-            <a href="#Header">Home</a>
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/OrderNow">
-            <a href="#OrderNow">Order A Cake</a>
-          </Link>
+          <Link to="/OrderNow">Order A Cake</Link>
         </li>
       </ul>
       <Link to="/">
@@ -45,12 +41,10 @@ const Navbar = () => {
       </Link>
       <ul className="app__navbar-links">
         <li>
-          <Link to="/MinouBox">
-            <a href="#MinouBox">MinouBox</a>
-          </Link>
+          <Link to="/MinouBox">MinouBox</Link>
         </li>
         <li>
-          <a href="#BestSeller">Best Seller</a>
+          <Link to="/Cart">Shopping Cart</Link>
         </li>
       </ul>
       <div className="app__navbar-cart">
@@ -77,24 +71,24 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+                <Link to="/" onClick={() => setToggleMenu(false)}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#Cakes" onClick={() => setToggleMenu(false)}>
-                  Cakes
-                </a>
+                <Link to="/OrderNow" onClick={() => setToggleMenu(false)}>
+                  Order A Cake
+                </Link>
               </li>
               <li>
-                <a href="#menu" onClick={() => setToggleMenu(false)}>
-                  Menu
-                </a>
+                <Link to="/MinouBox" onClick={() => setToggleMenu(false)}>
+                  MinouBox
+                </Link>
               </li>
               <li>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact
-                </a>
+                <Link to="/Cart" onClick={() => setToggleMenu(false)}>
+                  Shopping Cart
+                </Link>
               </li>
             </ul>
           </div>

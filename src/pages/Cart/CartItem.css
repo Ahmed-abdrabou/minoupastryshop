@@ -46,6 +46,7 @@
 .countHandler {
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 .countHandler input {
   text-align: center;
