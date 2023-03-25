@@ -19,7 +19,7 @@ const App = () => (
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/minoupastryshop" element={<MainPage />} />
           <Route path="/Cart" element={<CartContainer />} />
           <Route path="/CheckOutByEmail" element={<CheckOutByEmail />} />
           <Route path="/OrderNow" element={<OrderNow />} />

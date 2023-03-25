@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="app__content app__navbar">
       {/* MINOU-pastry-shop-text.png */}
-      <Link to="/" onClick={presshandleer}>
+      <Link to="/minoupastryshop" onClick={presshandleer}>
         <div className="app__navbar-logo-text">
           <div className="app__logo-title">
             <span>Minou</span>
@@ -34,7 +34,7 @@ const Navbar = () => {
       </Link>
       <ul className="app__navbar-links">
         <li>
-          <Link to="/" onClick={presshandleer}>
+          <Link to="/minoupastryshop" onClick={presshandleer}>
             Home
           </Link>
         </li>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <Link to="/" onClick={presshandleer}>
+      <Link to="/minoupastryshop" onClick={presshandleer}>
         <div className="app__navbar-logo">
           <img src={images.logo2} alt="app__logo" />
         </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
             <ul className="app__navbar-smallscreen_links">
               <li>
                 <Link
-                  to="/"
+                  to="/minoupastryshop"
                   onClick={() => {
                     setToggleMenu(false);
                     window.scrollTo(0, 0);

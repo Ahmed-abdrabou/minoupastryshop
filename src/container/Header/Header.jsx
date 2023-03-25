@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
-import BackGroundSlider from "../BackGroundSlider/BackGroundSlider";
-import { BackGround_images } from "../../constants/BackGround_images";
+// import BackGroundSlider from "../BackGroundSlider/BackGroundSlider";
+// import { BackGround_images } from "../../constants/BackGround_images";
 import VideoSection from "../VideoSection/VideoSection";
 
 const Header = () => {

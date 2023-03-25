@@ -63,7 +63,10 @@ export const CartContainer = () => {
               </div>
             </div>
             <div className="CartControl_buttons">
-              <span className="custom__button" onClick={() => navigate("/")}>
+              <span
+                className="custom__button"
+                onClick={() => navigate("/minoupastryshop")}
+              >
                 Continue Shopping
               </span>
               <span

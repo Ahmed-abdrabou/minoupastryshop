@@ -176,22 +176,22 @@
  */
 
 .section__padding {
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
 }
 @media (max-width: 1024px) {
   .section__padding {
-    padding: 1rem;
+    padding: 5rem 1rem;
   }
 }
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 1rem;
+    padding: 5rem 1rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 0.5rem 0.5rem;
+    padding: 5rem 0.5rem;
   }
 }
 .flex__center {
