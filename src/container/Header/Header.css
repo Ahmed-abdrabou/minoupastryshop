@@ -43,6 +43,7 @@
   z-index: 3;
   left: 50%;
   position: absolute;
+  margin-top: 30px;
 }
 .app__header-text {
   position: absolute;
