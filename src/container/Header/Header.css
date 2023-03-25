@@ -1,11 +1,11 @@
 .app__header {
-  height: calc(100vh - 60px);
+  height: calc(100% - 60px);
   position: relative;
   overflow: hidden;
   /* background: url("D:/MINOU/minou website/menou site 4/minou-pastery-4/src/assets/bg.jpg"); */
-  background-origin: calc(50%, 50%);
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-origin: calc(50%, 50%); */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
 }
 .app__header:before {
   content: "";
@@ -33,7 +33,7 @@
 
   position: absolute;
 
-  top: 95%;
+  top: 90%;
 
   background: url(../../assets/breaker80.png) repeat-x;
   z-index: 3;
@@ -73,17 +73,20 @@
 }
 @media screen and (max-width: 769px) {
   .app__header-text h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .app__header-text p {
-    font-size: 20px;
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 480px) {
   .app__header-text h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .app__header-text p {
-    font-size: 20px;
+    font-size: 10px;
+    padding-top: 10px;
   }
 }

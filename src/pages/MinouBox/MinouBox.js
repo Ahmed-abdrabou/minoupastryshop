@@ -14,7 +14,7 @@ import { Product } from "../../container/product/Product";
 import "./MinouBox.css";
 
 const MinouBox = () => (
-  <div className="app__container section__padding MinouBox">
+  <div className="app__content section__padding MinouBox">
     <div className="section_header">
       <h1>MinouBox</h1>
     </div>

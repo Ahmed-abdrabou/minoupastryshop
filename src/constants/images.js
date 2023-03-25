@@ -71,6 +71,13 @@ import ProductsItems_img_eclairs_coffee from "../assets/ProductsItems_img_eclair
 import ProductsItems_img_eclairs_lemon from "../assets/ProductsItems_img_eclairs_lemon.jpg";
 
 import whatsappAvater from "../assets/whatsappAvater.png";
+
+import Reviews_1 from "../assets/Reviews_1.jpg";
+import Reviews_2 from "../assets/Reviews_2.jpg";
+import Reviews_3 from "../assets/Reviews_3.jpg";
+import Reviews_4 from "../assets/Reviews_4.jpg";
+import Reviews_5 from "../assets/Reviews_5.jpg";
+
 export default {
   logo,
   logo2,
@@ -146,4 +153,10 @@ export default {
   ProductsItems_img_eclairs_lemon,
 
   whatsappAvater,
+
+  Reviews_1,
+  Reviews_2,
+  Reviews_3,
+  Reviews_4,
+  Reviews_5,
 };

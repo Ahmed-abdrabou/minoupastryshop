@@ -1,0 +1,18 @@
+/* .VideoSection {
+  background: url(../../assets//Video1.mp4);
+  background-attachment: fixed;
+  background-size: cover;
+} */
+.VideoSection video {
+  /* height: fit-content; */
+  width: 100%;
+  min-height: 100%;
+  /* width: min-content; */
+  /* orientation: portrait; */
+  offset-anchor: 100px;
+}
+@media screen and (max-width: 650px) {
+  .VideoSection video {
+    width: min-content;
+  }
+}

@@ -8,6 +8,10 @@ import { MiniCakes_img } from "../../constants/MiniCakes_img";
 const MiniCakes = () => {
   const navigate = useNavigate();
 
+  const presshandleer = () => {
+    navigate("/OrderNow");
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="section__padding section_container Small_flex_column_reverse MiniCakes">
       <div className="section_images_container">
@@ -28,7 +32,7 @@ const MiniCakes = () => {
           celebrating a birthday, engagement or getting married, we are sure to
           create a beautiful and unique cake for your special occasion.
         </p>
-        <span className="custom__button " onClick={() => navigate("/OrderNow")}>
+        <span className="custom__button " onClick={presshandleer}>
           Order Now..
         </span>
       </div>

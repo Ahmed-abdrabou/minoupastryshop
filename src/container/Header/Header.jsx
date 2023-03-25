@@ -4,9 +4,14 @@ import "./Header.css";
 
 import BackGroundSlider from "../BackGroundSlider/BackGroundSlider";
 import { BackGround_images } from "../../constants/BackGround_images";
+import VideoSection from "../VideoSection/VideoSection";
 
 const Header = () => {
   const navigate = useNavigate();
+  const presshandleer = () => {
+    navigate("/OrderNow");
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="app__content app__header" id="Header">
       <div className="app__header-text">
@@ -19,13 +24,14 @@ const Header = () => {
 
         <span
           className="custom__button header-foot_button"
-          onClick={() => navigate("/OrderNow")}
+          onClick={presshandleer}
         >
           Order Now..
         </span>
       </div>
 
-      <BackGroundSlider slides={BackGround_images} />
+      {/* <BackGroundSlider slides={BackGround_images} /> */}
+      <VideoSection />
       <div className="header-foot">
         <span className="header-foot-bg"></span>
       </div>

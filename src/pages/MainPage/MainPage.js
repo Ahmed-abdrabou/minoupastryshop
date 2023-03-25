@@ -12,6 +12,7 @@ import {
   BirthdayCakes,
   WeddingCakes,
   MiniCakes,
+  Reviews,
 } from "../../container";
 import { images } from "../../constants";
 // import ShoppingCart from "../container/ShoppingCart/ShoppingCart";
@@ -38,12 +39,13 @@ const MainPage = () => (
       chatMessage="Hi sweety, what do like to order"
       placeholder="type and press send to open whatsApp"
     />
-
     <Header />
     <Slideshow />
     <BirthdayCakes />
     <WeddingCakes />
     <MiniCakes />
+    <Reviews />
+
     <SpecialOccasionCakes />
     <MinouBox />
   </div>

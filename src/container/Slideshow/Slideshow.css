@@ -24,6 +24,11 @@
   margin-top: 40px;
   font-family: "Merienda One", cursive;
 }
+@media screen and (max-width: 480px) {
+  .slideshow_section_header {
+    font-size: 20px;
+  }
+}
 .slideshow_section::before {
   content: "";
   position: absolute;

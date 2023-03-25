@@ -3,10 +3,10 @@
   background-color: var(--color-crimson);
   color: var(--color-black);
   font-family: var(--font-base);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
+  line-height: 12px;
+  font-size: 13px;
   padding: 0.5rem 1.5rem;
   border-radius: 17px;
   border: none;
@@ -16,7 +16,7 @@
 }
 @media (max-width: 767px) {
   .custom__button {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .custom__button:hover {
@@ -80,7 +80,10 @@
 }
 @media (max-width: 480px) {
   .section_header h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  .section_header p {
+    font-size: 0.7em;
   }
 }
 .section_images_container {
@@ -149,13 +152,13 @@
 }
 @media (max-width: 767px) {
   .section_Text_container h2 {
-    font-size: 1.3em;
+    font-size: 1.9em;
   }
   .section_Text_container h3 {
-    font-size: 0.5em;
+    font-size: 0.9em;
   }
   .section_Text_container p {
-    font-size: 0.4em;
+    font-size: 0.7em;
     padding: 1rem 0rem;
   }
 }
@@ -173,11 +176,16 @@
  */
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 2rem 1rem;
+}
+@media (max-width: 1024px) {
+  .section__padding {
+    padding: 1rem;
+  }
 }
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 4rem;
+    padding: 1rem;
   }
 }
 

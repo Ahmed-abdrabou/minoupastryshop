@@ -7,6 +7,8 @@ import SpecialOccasionCakes from "./SpecialOccasionCakes/SpecialOccasionCakes";
 import BirthdayCakes from "./BirthdayCakes/BirthdayCakes";
 import WeddingCakes from "./WeddingCakes/WeddingCakes";
 import MiniCakes from "./MiniCakes/MiniCakes";
+import VideoSection from "./VideoSection/VideoSection";
+import Reviews from "./Reviews/Reviews";
 
 export {
   MainDiscountBar,
@@ -18,4 +20,6 @@ export {
   BirthdayCakes,
   WeddingCakes,
   MiniCakes,
+  VideoSection,
+  Reviews,
 };

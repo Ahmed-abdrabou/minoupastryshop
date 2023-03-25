@@ -36,19 +36,32 @@ export const CartContainer = () => {
         </div>
         {totalAmount > 0 ? (
           <div className="CartControl">
-            <p>
-              Total Items: <span>{totalNumbers}</span> Items
-            </p>
-            <p>
-              Subtotal: EGP <span>{totalAmount.toFixed(2)}</span>
-            </p>
-            <p>
-              deleviry fees: EGP <span>{DeliveryFess.toFixed(2)}</span>
-            </p>
-
-            <p>
-              Total: EGP <span>{(totalAmount + DeliveryFess).toFixed(2)}</span>
-            </p>
+            <div className="CartControl_text">
+              <div className="CartControl_text_holder">
+                <div className="CartControl_text_p">Total Items:</div>
+                <div className="CartControl_text_p">
+                  <span>{totalNumbers}</span> Items
+                </div>
+              </div>
+              <div className="CartControl_text_holder">
+                <div className="CartControl_text_p">Subtotal: </div>
+                <div className="CartControl_text_p">
+                  EGP <span>{totalAmount.toFixed(2)}</span>
+                </div>
+              </div>
+              <div className="CartControl_text_holder">
+                <div className="CartControl_text_p">deleviry fees:</div>
+                <div className="CartControl_text_p">
+                  EGP <span>{DeliveryFess.toFixed(2)}</span>
+                </div>
+              </div>
+              <div className="CartControl_text_holder">
+                <div className="CartControl_text_p">Total:</div>
+                <div className="CartControl_text_p">
+                  EGP <span>{(totalAmount + DeliveryFess).toFixed(2)}</span>
+                </div>
+              </div>
+            </div>
             <div className="CartControl_buttons">
               <span className="custom__button" onClick={() => navigate("/")}>
                 Continue Shopping
