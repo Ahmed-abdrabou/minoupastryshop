@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minoupastryshop/static/css/main.18bce537.css",
-    "main.js": "/minoupastryshop/static/js/main.26a0b991.js",
+    "main.css": "/minoupastryshop/static/css/main.917ea283.css",
+    "main.js": "/minoupastryshop/static/js/main.6e440eae.js",
     "static/media/Video1.mp4": "/minoupastryshop/static/media/Video1.b4ac7f10e2203c32e0da.mp4",
     "static/media/ProductsItems_img_summer_cookies_12_pics.jpg": "/minoupastryshop/static/media/ProductsItems_img_summer_cookies_12_pics.db24336bff62ee4ef27f.jpg",
     "static/media/ProductsItems_img_summer_cookies_25_pics.jpg": "/minoupastryshop/static/media/ProductsItems_img_summer_cookies_25_pics.db24336bff62ee4ef27f.jpg",
@@ -67,11 +67,11 @@
     "static/media/MINOU_text.png": "/minoupastryshop/static/media/MINOU_text.8f7a39f0a5525cc63aa2.png",
     "index.html": "/minoupastryshop/index.html",
     "static/media/cart.svg": "/minoupastryshop/static/media/cart.92ef1eb8f6760643f59e59cdee8425e2.svg",
-    "main.18bce537.css.map": "/minoupastryshop/static/css/main.18bce537.css.map",
-    "main.26a0b991.js.map": "/minoupastryshop/static/js/main.26a0b991.js.map"
+    "main.917ea283.css.map": "/minoupastryshop/static/css/main.917ea283.css.map",
+    "main.6e440eae.js.map": "/minoupastryshop/static/js/main.6e440eae.js.map"
   },
   "entrypoints": [
-    "static/css/main.18bce537.css",
-    "static/js/main.26a0b991.js"
+    "static/css/main.917ea283.css",
+    "static/js/main.6e440eae.js"
   ]
 }
