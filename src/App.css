@@ -33,7 +33,6 @@
   background-color: var(--color-crimson);
   color: var(--color-black);
   box-shadow: 0px 3px 15px rgb(255, 255, 255);
-  transform: translateY(-2px);
 }
 /* end customs */
 
@@ -54,7 +53,7 @@
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 5rem 0.5rem;
+    padding: 2rem 0.5rem;
   }
 }
 .section_container {
@@ -146,6 +145,7 @@
   text-align: center;
 
   padding: 0rem 3rem;
+  margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .section_Text_container {

@@ -40,7 +40,10 @@ const OrderNow = () => {
     navigate("/");
   };
   return (
-    <div className="OrderNow_container" id="OrderNow">
+    <div
+      className="app__container section__padding OrderNow_container"
+      id="OrderNow"
+    >
       <div className="section_header">
         <h1>Make a Spesical Cake Now</h1>
       </div>

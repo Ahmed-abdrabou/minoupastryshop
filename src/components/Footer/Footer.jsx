@@ -20,7 +20,8 @@ const Footer = () => (
                 "_blank"
               );
             }}
-            style={{ color: "#ffd897" }}
+            style={{ color: "#ffd897", fontSize: "40px" }}
+            className="footerIcons"
           />
           <FiInstagram
             onClick={() => {
@@ -31,7 +32,8 @@ const Footer = () => (
                 "_blank"
               );
             }}
-            style={{ color: "#ffd897" }}
+            style={{ color: "#ffd897", fontSize: "40px" }}
+            className="footerIcons"
           />
         </div>
       </div>

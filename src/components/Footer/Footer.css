@@ -44,7 +44,10 @@
 .app__footer-links_icons {
   margin-top: 0.5rem;
 }
-
+.app__footer-links_icons .footerIcons {
+  box-shadow: 0px 3px 15px rgb(176, 0, 91);
+  border-radius: 10px;
+}
 .app__footer-links_icons svg {
   color: var(--color-white);
   margin: 0.5rem;

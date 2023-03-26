@@ -133,3 +133,6 @@
   align-items: center;
   text-align: center;
 }
+.CartContainer h1 {
+  text-align: center;
+}

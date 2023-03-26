@@ -91,8 +91,11 @@
 }
 .OrderNow_control button {
   margin: 10px;
-  background-color: var(--color-crimson);
-  color: var(--color-black);
+
+  background-color: var(--pink-color);
+  box-shadow: 0px 3px 15px rgb(176, 0, 91);
+  color: var(--color-crimson);
+
   font-family: var(--font-base);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -111,8 +114,9 @@
   }
 }
 .OrderNow_control button:hover {
-  background-color: var(--pink-color);
-  color: var(--color-crimson);
+  background-color: var(--color-crimson);
+  color: var(--color-black);
+  box-shadow: 0px 3px 15px rgb(255, 255, 255);
 }
 .OccasionDate {
   display: flex;
