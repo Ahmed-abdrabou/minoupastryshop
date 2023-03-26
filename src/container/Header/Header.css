@@ -50,7 +50,8 @@
   width: 90%;
   right: 50%;
   bottom: 50%;
-  transform: translate(50%, 50%);
+  /* transform: translate(50%, 50%); */
+  transform: translateX(50%);
 
   text-align: center;
   z-index: 2;

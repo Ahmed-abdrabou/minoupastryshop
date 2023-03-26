@@ -13,7 +13,7 @@ const Header = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="app__content app__header" id="Header">
+    <div className="app__content app__header header" id="Header">
       <div className="app__header-text">
         <h2>Cake Your Day;</h2>
         <p>
