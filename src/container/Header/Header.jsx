@@ -17,8 +17,8 @@ const Header = () => {
       <div className="app__header-text">
         <h2>Cake Your Day;</h2>
         <p>
-          For our desserts we always use only the natural ingredients, Our
-          production is 100% handmade
+          " For our desserts we always use only the natural ingredients, Our
+          production is 100% handmade "
         </p>
         <p>Made For You With Love...&hearts;</p>
 

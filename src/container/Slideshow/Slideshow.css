@@ -13,6 +13,8 @@
   align-items: center;
   flex-direction: column;
   z-index: 30;
+
+  padding: 80px 0;
 }
 .slideshow_section_header {
   color: white;
@@ -21,7 +23,7 @@
   text-align: center;
   font-weight: 800;
   letter-spacing: -3px;
-  margin-top: 40px;
+  margin: 20px 0;
   font-family: "Merienda One", cursive;
 }
 @media screen and (max-width: 480px) {
@@ -45,7 +47,7 @@
 }
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 1000ms;
+  transition: cubic-bezier(0.25, -0.21, 0.85, 1.25) 2000ms;
   width: 300px;
   /* height: 400px; */
 }

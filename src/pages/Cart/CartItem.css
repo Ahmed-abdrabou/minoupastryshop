@@ -53,9 +53,13 @@
   width: 50px;
   /* margin: 0 20px; */
   border: none;
+  background: transparent;
 }
 .countHandler span {
   text-align: center;
   padding: 10px 40px;
   font-size: 30px;
+}
+.description_text .cartItem_Price span {
+  color: var(--pink-color);
 }

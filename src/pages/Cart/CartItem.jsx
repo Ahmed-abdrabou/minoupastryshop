@@ -26,7 +26,7 @@ export const CartItem = (props) => {
           <p className="cartItem_Title">{productName}</p>
           <p className="cartItem_Description">{productDescription}</p>
           <p className="cartItem_Price">
-            {pricedescription} : EGP {price.toFixed(2)}
+            {pricedescription} : EGP <span>{price.toFixed(2)}</span>
           </p>
         </div>
         <div className="countHandler">

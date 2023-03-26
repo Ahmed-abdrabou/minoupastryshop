@@ -32,7 +32,7 @@
   transform-origin: center;
   transition: 0.5s;
 }
-.product_img-container:hover img {
+.Product_container:hover .product_img-container img {
   width: 100%;
   transition: 0.5s;
   transform: scale(1.2, 1.2);
@@ -93,6 +93,9 @@
 .Product_container:hover .product_Price {
   transform: translateY(-3px);
   transition: 0.5s;
+}
+.Product_container .product_Price span {
+  color: var(--pink-color);
 }
 @media screen and (max-width: 769px) {
   .product_button {

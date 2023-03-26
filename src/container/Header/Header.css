@@ -33,7 +33,7 @@
 
   position: absolute;
 
-  top: 90%;
+  bottom: 0%;
 
   background: url(../../assets/breaker80.png) repeat-x;
   z-index: 3;
@@ -67,7 +67,7 @@
   padding-top: 30px;
   color: var(--color-white);
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   word-spacing: 3px;
   line-height: 30px;
   text-shadow: 2px 2px black;
@@ -84,10 +84,10 @@
 }
 @media screen and (max-width: 480px) {
   .app__header-text h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .app__header-text p {
-    font-size: 10px;
+    font-size: 15px;
     padding-top: 10px;
   }
 }

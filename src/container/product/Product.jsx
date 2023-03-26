@@ -26,7 +26,7 @@ export const Product = (props) => {
         <p className="product_Title">{productName}</p>
         <p className="product_Description">{productDescription}</p>
         <p className="product_Price">
-          {pricedescription} : EGP {price.toFixed(2)}
+          {pricedescription} : EGP<span>{price.toFixed(2)}</span>
         </p>
       </div>
       <div className="product_buttons_handler">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Reviews.css";
 import { ReviewsData } from "../../constants/ReviewsData";
 
-const delay = 4500;
+const delay = 5500;
 
 const Reviews = () => {
   const [index, setIndex] = React.useState(0);

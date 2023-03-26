@@ -2,7 +2,7 @@ import React from "react";
 import "./Slideshow.css";
 import { SlideshowImages } from "../../constants/SlideshowImages";
 
-const delay = 2500;
+const delay = 4500;
 
 const Slideshow = () => {
   const [index, setIndex] = React.useState(0);

@@ -56,7 +56,9 @@ export const CartContainer = () => {
                 </div>
               </div>
               <div className="CartControl_text_holder">
-                <div className="CartControl_text_p">Total:</div>
+                <div className="CartControl_text_p">
+                  <big style={{ fontWeight: "bold" }}>Total:</big>
+                </div>
                 <div className="CartControl_text_p">
                   EGP <span>{(totalAmount + DeliveryFess).toFixed(2)}</span>
                 </div>
