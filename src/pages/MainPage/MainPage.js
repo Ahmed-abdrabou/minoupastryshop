@@ -13,6 +13,7 @@ import {
   WeddingCakes,
   MiniCakes,
   Reviews,
+  VoyageSlider,
 } from "../../container";
 import { images } from "../../constants";
 // import ShoppingCart from "../container/ShoppingCart/ShoppingCart";
@@ -45,7 +46,7 @@ const MainPage = () => (
     <WeddingCakes />
     <MiniCakes />
     <Reviews />
-
+    {/* <VoyageSlider /> */}
     <SpecialOccasionCakes />
     <MinouBox />
   </div>

@@ -6,17 +6,19 @@ import MainPage from "./pages/MainPage/MainPage";
 import { CartContainer } from "./pages/Cart/CartContainer";
 import { ShopContextProvider } from "./container/context/shop-context";
 import { CheckOutByEmail } from "./pages/CheckOutByEmail/CheckOutByEmail";
+import GiftBoxAnimation from "./pages/GiftBoxAnimation/GiftBoxAnimation";
 
 import OrderNow from "./pages/OrderNow/OrderNow";
 
 import MinouBox from "./pages/MinouBox/MinouBox";
-
 import "./App.css";
 
 const App = () => (
   <div className="app">
     <ShopContextProvider>
       <Router>
+        <GiftBoxAnimation />
+
         <Navbar />
         <Routes>
           <Route path="/minoupastryshop" element={<MainPage />} />

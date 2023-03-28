@@ -9,6 +9,7 @@ import WeddingCakes from "./WeddingCakes/WeddingCakes";
 import MiniCakes from "./MiniCakes/MiniCakes";
 import VideoSection from "./VideoSection/VideoSection";
 import Reviews from "./Reviews/Reviews";
+import VoyageSlider from "./VoyageSlider/VoyageSlider";
 
 export {
   MainDiscountBar,
@@ -22,4 +23,5 @@ export {
   MiniCakes,
   VideoSection,
   Reviews,
+  VoyageSlider,
 };
