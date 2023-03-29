@@ -5,7 +5,7 @@ import "./SpecialOccasionCakes.css";
 import { SpecialOccasionCakes_img } from "../../constants/SpecialOccasionCakes_img";
 
 const SpecialOccasionCakes = () => (
-  <div className="section__padding app__content SpecialOccasionCakes">
+  <div className="section__padding app__content SpecialOccasionCakes  reveal">
     <div className="section_header">
       <h1>Special Occasion Cakes</h1>
       <p>Minou loves to be a part of your happy moments.</p>

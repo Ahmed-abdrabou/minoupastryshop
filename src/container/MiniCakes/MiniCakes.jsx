@@ -13,7 +13,7 @@ const MiniCakes = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="section__padding section_container Small_flex_column_reverse MiniCakes">
+    <div className="section__padding section_container Small_flex_column_reverse MiniCakes  reveal">
       <div className="section_images_container">
         {MiniCakes_img.map((card, index) => {
           return (

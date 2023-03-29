@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
 // import BackGroundSlider from "../BackGroundSlider/BackGroundSlider";
 // import { BackGround_images } from "../../constants/BackGround_images";
 import VideoSection from "../VideoSection/VideoSection";
-import Surprise from "../../pages/Surprise/Surprise";
+// import Surprise from "../../pages/Surprise/Surprise";
 // import GiftBoxAnimation from "../../pages/GiftBoxAnimation/GiftBoxAnimation";
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
     navigate("/OrderNow");
     window.scrollTo(0, 0);
   };
+
   return (
     <div className="app__content app__header header" id="Header">
       {/* <Surprise /> */}

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import { useNavigate } from "react-router-dom";
 
 import "./BirthdayCakes.css";
@@ -11,9 +12,29 @@ const BirthdayCakes = () => {
     navigate("/OrderNow");
     window.scrollTo(0, 0);
   };
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", reveal);
+    return () => window.removeEventListener("scroll", reveal);
+  }, []);
+
   return (
     <div
-      className="section__padding section_container Small_flex_column_reverse"
+      className="section__padding section_container Small_flex_column_reverse   reveal"
       id="Cakes"
     >
       <div className="section_images_container">

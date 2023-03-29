@@ -12,7 +12,7 @@ const WeddingCakes = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="section__padding section_container Small_flex_column_reverse WeddingCakes">
+    <div className="section__padding section_container Small_flex_column_reverse WeddingCakes  reveal">
       <div className="section_images_container">
         {WeddingCakes_img.map((card, index) => {
           return (
