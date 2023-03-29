@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/minoupastryshop/static/css/main.f850ec8e.css",
+    "main.css": "/minoupastryshop/static/css/main.0a7a6ec4.css",
     "main.js": "/minoupastryshop/static/js/main.12bab28e.js",
     "static/media/Video1.mp4": "/minoupastryshop/static/media/Video1.b4ac7f10e2203c32e0da.mp4",
     "static/media/happy.mp3": "/minoupastryshop/static/media/happy.cae227c20b1dddc4b5e3.mp3",
@@ -70,11 +70,11 @@
     "static/media/MINOU_text.png": "/minoupastryshop/static/media/MINOU_text.8f7a39f0a5525cc63aa2.png",
     "index.html": "/minoupastryshop/index.html",
     "static/media/cart.svg": "/minoupastryshop/static/media/cart.92ef1eb8f6760643f59e59cdee8425e2.svg",
-    "main.f850ec8e.css.map": "/minoupastryshop/static/css/main.f850ec8e.css.map",
+    "main.0a7a6ec4.css.map": "/minoupastryshop/static/css/main.0a7a6ec4.css.map",
     "main.12bab28e.js.map": "/minoupastryshop/static/js/main.12bab28e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f850ec8e.css",
+    "static/css/main.0a7a6ec4.css",
     "static/js/main.12bab28e.js"
   ]
 }
