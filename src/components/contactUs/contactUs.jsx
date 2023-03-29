@@ -30,10 +30,15 @@ export const ContactUs = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="ContactUs">
       <h2>Send Us A message</h2>
-      <input type="text" name="user_name" placeholder="Name:" />
-      <input type="email" name="user_email" placeholder="Email:" />
+      <input type="text" name="UserName" placeholder="Name:" required />
+      <input
+        type="number"
+        name="PhoneNumber"
+        placeholder="phone number :"
+        required
+      />
       <textarea
-        name="message"
+        name="Notes"
         style={{
           minWidth: "200px",
           maxHeight: "200px",
@@ -41,6 +46,7 @@ export const ContactUs = () => {
           maxWidth: "200px",
         }}
         placeholder="Message:"
+        required
       />
       <button type="submit">Send</button>
     </form>

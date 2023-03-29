@@ -88,7 +88,7 @@ export const CheckOutByEmail = () => {
                   required
                 />
                 <input
-                  type="text"
+                  type="number"
                   name="PhoneNumber"
                   placeholder="phone number :"
                   required

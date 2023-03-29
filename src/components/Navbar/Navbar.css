@@ -9,6 +9,7 @@
   padding: 1rem 2rem;
   height: 60px;
   z-index: 100;
+  /* pointer-events: none; */
 }
 @media screen and (max-width: 769px) {
   .app__navbar {
@@ -134,6 +135,8 @@
   top: 8px;
   display: flex;
   align-items: center;
+
+  background-color: transparent;
 }
 
 @media screen and (max-width: 769px) {

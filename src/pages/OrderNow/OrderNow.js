@@ -37,7 +37,7 @@ const OrderNow = () => {
         }
       );
     e.target.reset();
-    navigate("/");
+    navigate("/minoupastryshop");
   };
   return (
     <div
@@ -64,7 +64,7 @@ const OrderNow = () => {
                 required
               />
               <input
-                type="text"
+                type="number"
                 name="PhoneNumber"
                 placeholder="phone number :"
                 required
@@ -86,7 +86,7 @@ const OrderNow = () => {
               <input
                 type="text"
                 name="occationDescription"
-                placeholder="what is your occation:"
+                placeholder="Occation description:"
                 required
               />
               <textarea

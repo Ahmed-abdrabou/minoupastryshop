@@ -120,6 +120,8 @@
   text-align: center;
   width: 40px;
   border: none;
+
+  background: transparent;
 }
 .product_countHandler span {
   text-align: center;
