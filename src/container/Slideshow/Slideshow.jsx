@@ -33,7 +33,7 @@ const Slideshow = () => {
   }, [index]);
 
   return (
-    <div className="app__content slideshow_section">
+    <div className="app__content slideshow_section ">
       <div className="slideshow_section_header">
         <h1>BestSeller</h1>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, BackGroundAnimations } from "./components";
 
 import MainPage from "./pages/MainPage/MainPage";
 import { CartContainer } from "./pages/Cart/CartContainer";
@@ -20,6 +20,7 @@ const App = () => (
         <GiftBoxAnimation />
 
         <Navbar />
+        <BackGroundAnimations />
         <Routes>
           <Route path="/minoupastryshop" element={<MainPage />} />
           <Route path="/Cart" element={<CartContainer />} />
