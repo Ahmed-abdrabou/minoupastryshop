@@ -10,7 +10,7 @@ import MiniCakes from "./MiniCakes/MiniCakes";
 import VideoSection from "./VideoSection/VideoSection";
 import Reviews from "./Reviews/Reviews";
 import VoyageSlider from "./VoyageSlider/VoyageSlider";
-
+import AboutMe from "./AboutMe/AboutMe.jsx";
 export {
   MainDiscountBar,
   Header,
@@ -24,4 +24,5 @@ export {
   VideoSection,
   Reviews,
   VoyageSlider,
+  AboutMe,
 };

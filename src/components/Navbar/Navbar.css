@@ -10,6 +10,7 @@
   height: 60px;
   z-index: 100;
   /* pointer-events: none; */
+  background-color: var(--section-background);
 }
 @media screen and (max-width: 769px) {
   .app__navbar {

@@ -14,6 +14,7 @@ import {
   MiniCakes,
   Reviews,
   VoyageSlider,
+  AboutMe,
 } from "../../container";
 import { images } from "../../constants";
 // import ShoppingCart from "../container/ShoppingCart/ShoppingCart";
@@ -41,6 +42,7 @@ const MainPage = () => (
       placeholder="type and press send to open whatsApp"
     />
     <Header />
+    <AboutMe />
     <Slideshow />
     <BirthdayCakes />
     <WeddingCakes />

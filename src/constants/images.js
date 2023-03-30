@@ -78,6 +78,8 @@ import Reviews_3 from "../assets/Reviews_3.jpg";
 import Reviews_4 from "../assets/Reviews_4.jpg";
 import Reviews_5 from "../assets/Reviews_5.jpg";
 
+import mona_1 from "../assets/mona_1.jpg";
+
 export default {
   logo,
   logo2,
@@ -159,4 +161,6 @@ export default {
   Reviews_3,
   Reviews_4,
   Reviews_5,
+
+  mona_1,
 };
