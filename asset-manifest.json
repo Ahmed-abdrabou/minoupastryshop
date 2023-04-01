@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minoupastryshop/static/css/main.21a5537f.css",
-    "main.js": "/minoupastryshop/static/js/main.5b9d2dda.js",
+    "main.css": "/minoupastryshop/static/css/main.294671e3.css",
+    "main.js": "/minoupastryshop/static/js/main.46bce710.js",
     "static/media/Video1.mp4": "/minoupastryshop/static/media/Video1.b4ac7f10e2203c32e0da.mp4",
     "static/media/mona_1.jpg": "/minoupastryshop/static/media/mona_1.fd66c01fac9ac0c0ebf2.jpg",
     "static/media/happy.mp3": "/minoupastryshop/static/media/happy.cae227c20b1dddc4b5e3.mp3",
@@ -71,11 +71,11 @@
     "static/media/MINOU_text.png": "/minoupastryshop/static/media/MINOU_text.8f7a39f0a5525cc63aa2.png",
     "index.html": "/minoupastryshop/index.html",
     "static/media/cart.svg": "/minoupastryshop/static/media/cart.92ef1eb8f6760643f59e59cdee8425e2.svg",
-    "main.21a5537f.css.map": "/minoupastryshop/static/css/main.21a5537f.css.map",
-    "main.5b9d2dda.js.map": "/minoupastryshop/static/js/main.5b9d2dda.js.map"
+    "main.294671e3.css.map": "/minoupastryshop/static/css/main.294671e3.css.map",
+    "main.46bce710.js.map": "/minoupastryshop/static/js/main.46bce710.js.map"
   },
   "entrypoints": [
-    "static/css/main.21a5537f.css",
-    "static/js/main.5b9d2dda.js"
+    "static/css/main.294671e3.css",
+    "static/js/main.46bce710.js"
   ]
 }
