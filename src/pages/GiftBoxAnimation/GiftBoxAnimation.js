@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import "./styles.css";
 
 import box from "./images/box.png";
@@ -31,7 +31,6 @@ export default function GiftBoxAnimation() {
 
   function animate() {
     let isDone = rotated === "rotated" ? true : false;
-
     if (toggleMenu === false) {
       setToggleMenu(true);
     } else {
@@ -87,7 +86,9 @@ export default function GiftBoxAnimation() {
               </div>
               <span
                 className="custom__button"
-                onClick={() => setToggleGiftBoxAnimation(false)}
+                onClick={() => {
+                  setToggleGiftBoxAnimation(false);
+                }}
               >
                 دوسي هنا
               </span>
@@ -96,7 +97,18 @@ export default function GiftBoxAnimation() {
           )}
         </div>
       ) : (
-        <audio src={AudioFiles.happy} autoPlay loop controls></audio>
+        <div>
+          <div className="countnumber">
+            <ul>
+              <li>Ready</li>
+              <li>3</li>
+              <li>2</li>
+              <li>1</li>
+              <li>Welcom To Minou's Website</li>
+            </ul>
+          </div>
+          <audio src={AudioFiles.happy} autoPlay loop controls></audio>
+        </div>
       )}
     </div>
   );

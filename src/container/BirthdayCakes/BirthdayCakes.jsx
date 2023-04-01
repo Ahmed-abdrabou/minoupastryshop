@@ -13,7 +13,7 @@ const BirthdayCakes = () => {
     window.scrollTo(0, 0);
   };
 
-  function reveal() {
+  const reveal = () => {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -25,7 +25,7 @@ const BirthdayCakes = () => {
         reveals[i].classList.remove("active");
       }
     }
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", reveal);
