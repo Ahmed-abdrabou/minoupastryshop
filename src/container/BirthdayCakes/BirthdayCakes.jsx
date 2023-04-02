@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -13,19 +13,19 @@ const BirthdayCakes = () => {
     window.scrollTo(0, 0);
   };
 
-  const reveal = () => {
+  const MINIMUM_VISIBLE_HEIGHT = 150;
+  const reveal = useCallback(() => {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
+      if (elementTop < windowHeight - MINIMUM_VISIBLE_HEIGHT) {
         reveals[i].classList.add("active");
       } else {
         reveals[i].classList.remove("active");
       }
     }
-  };
+  }, [MINIMUM_VISIBLE_HEIGHT]);
 
   useEffect(() => {
     window.addEventListener("scroll", reveal);
@@ -40,7 +40,7 @@ const BirthdayCakes = () => {
       <div className="section_images_container">
         {BirthdayCakes_img.map((card, index) => {
           return (
-            <div className="section_img" key={index}>
+            <div className="section_img" key={`${index}-${card.image}`}>
               <img src={card.image} alt="section_img" />
             </div>
           );

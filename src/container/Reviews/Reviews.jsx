@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Reviews.css";
 import { ReviewsData } from "../../constants/ReviewsData";
 
@@ -6,6 +6,9 @@ const delay = 5500;
 
 const Reviews = () => {
   const [index, setIndex] = React.useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
   const timeoutRef = React.useRef(null);
 
   function resetTimeout() {
@@ -32,12 +35,47 @@ const Reviews = () => {
     };
   }, [index]);
 
+  const handleNextSlide = () => {
+    setIndex((prevIndex) =>
+      prevIndex === ReviewsData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevSlide = () => {
+    setIndex((prevIndex) =>
+      prevIndex === 0 ? ReviewsData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 15) {
+      handleNextSlide();
+    }
+
+    if (touchStart - touchEnd < -15) {
+      handlePrevSlide();
+    }
+  };
+
   return (
     <div className="app__content Reviews_section">
       <div className="Reviews_section_header">
         <h1>Minou's Friends Review</h1>
       </div>
-      <div className="Reviews">
+      <div
+        className="Reviews"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
           className="ReviewsSlider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}

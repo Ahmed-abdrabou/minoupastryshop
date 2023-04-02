@@ -119,6 +119,51 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  to="/Cookies"
+                  onClick={() => {
+                    setToggleMenu(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Cookies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Brownies"
+                  onClick={() => {
+                    setToggleMenu(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Brownies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Cupcakes"
+                  onClick={() => {
+                    setToggleMenu(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Cupcakes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Eclairs"
+                  onClick={() => {
+                    setToggleMenu(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Eclairs
+                </Link>
+              </li>
+
+              <li>
+                <Link
                   to="/Cart"
                   onClick={() => {
                     setToggleMenu(false);

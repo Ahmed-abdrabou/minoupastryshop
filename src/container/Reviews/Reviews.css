@@ -74,6 +74,8 @@
   /* max-width: 500px; */
   display: flex;
   align-items: center;
+
+  -webkit-overflow-scrolling: touch;
 }
 
 .ReviewsSlider .ReviewsSlide {

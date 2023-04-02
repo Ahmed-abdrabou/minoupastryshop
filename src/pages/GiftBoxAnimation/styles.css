@@ -21,8 +21,8 @@
     opacity: 0;
   }
   100% {
-    display: none;
     opacity: 0;
+    transform: translateY(-10000px);
   }
 }
 

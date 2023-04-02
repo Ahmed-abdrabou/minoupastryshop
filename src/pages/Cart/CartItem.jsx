@@ -5,12 +5,12 @@ import "./CartItem.css";
 
 export const CartItem = (props) => {
   const {
-    id,
-    productName,
-    productDescription,
-    price,
-    pricedescription,
-    productImage,
+    id = "",
+    productName = "",
+    productDescription = "",
+    price = 0,
+    pricedescription = "",
+    productImage = "",
   } = props.data;
   const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
     useContext(ShopContext);
@@ -18,10 +18,10 @@ export const CartItem = (props) => {
   return (
     <div className="cartItem_container">
       <div className="cartItem_img-container">
-        <img src={productImage} />
+        <img src={productImage} alt="productImage" />
       </div>
 
-      <div className="description">
+      <div className="cartItem_Details">
         <div className="description_text">
           <p className="cartItem_Title">{productName}</p>
           <p className="cartItem_Description">{productDescription}</p>

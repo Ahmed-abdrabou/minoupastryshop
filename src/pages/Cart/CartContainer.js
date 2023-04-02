@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../container/context/shop-context";
-import { ProductsItems_img } from "../../constants/ProductsItems_img";
+import { ProductsItems_compined } from "../../constants/ProductsItems_compined";
 
 import { CartItem } from "./CartItem";
 import { useNavigate } from "react-router-dom";
@@ -19,8 +19,7 @@ export const CartContainer = () => {
   const totalNumbers = getTotalCartNumbers();
   const navigate = useNavigate();
 
-  const DeliveryFess = 30;
-
+  const DeliveryFee = 30;
   return (
     <div className="app__container section__padding Cart" id="ShoppingCart">
       <div className="CartContainer_header">
@@ -28,12 +27,16 @@ export const CartContainer = () => {
       </div>
       <div className="CartContainer">
         <div className="Items">
-          {ProductsItems_img.map((product) => {
-            if (cartItems[product.id] !== 0) {
-              return <CartItem data={product} />;
+          {ProductsItems_compined.map((product) => {
+            if (
+              cartItems.hasOwnProperty(product.id) &&
+              cartItems[product.id] !== 0
+            ) {
+              return <CartItem key={product.id} data={product} />;
             }
           })}
         </div>
+
         {totalAmount > 0 ? (
           <div className="CartControl">
             <div className="CartControl_text">
@@ -52,7 +55,7 @@ export const CartContainer = () => {
               <div className="CartControl_text_holder">
                 <div className="CartControl_text_p">deleviry fees:</div>
                 <div className="CartControl_text_p">
-                  EGP <span>{DeliveryFess.toFixed(2)}</span>
+                  EGP <span>{DeliveryFee.toFixed(2)}</span>
                 </div>
               </div>
               <div className="CartControl_text_holder">
@@ -60,7 +63,7 @@ export const CartContainer = () => {
                   <big style={{ fontWeight: "bold" }}>Total:</big>
                 </div>
                 <div className="CartControl_text_p">
-                  EGP <span>{(totalAmount + DeliveryFess).toFixed(2)}</span>
+                  EGP <span>{(totalAmount + DeliveryFee).toFixed(2)}</span>
                 </div>
               </div>
             </div>

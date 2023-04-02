@@ -1,20 +1,23 @@
-import React from "react";
-import "./Slideshow.css";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { SlideshowImages } from "../../constants/SlideshowImages";
+
+import "./Slideshow.css";
 
 const delay = 4500;
 
 const Slideshow = () => {
-  const [index, setIndex] = React.useState(0);
-  const timeoutRef = React.useRef(null);
+  const [index, setIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  const timeoutRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
+    const resetTimeout = () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
@@ -32,22 +35,60 @@ const Slideshow = () => {
     };
   }, [index]);
 
+  const memoizedImages = useMemo(() => SlideshowImages, []);
+
+  const handleNextSlide = () => {
+    setIndex((prevIndex) =>
+      prevIndex === SlideshowImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handlePrevSlide = () => {
+    setIndex((prevIndex) =>
+      prevIndex === 0 ? SlideshowImages.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 15) {
+      handleNextSlide();
+    }
+
+    if (touchStart - touchEnd < -15) {
+      handlePrevSlide();
+    }
+  };
+
   return (
     <div className="app__content slideshow_section ">
       <div className="slideshow_section_header">
         <h1>BestSeller</h1>
       </div>
-      <div className=" slideshow">
+      <div
+        className=" slideshow"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
           className="slideshowSlider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
-          {SlideshowImages.map((card, index) => (
-            <div className="slide" key={index}>
+          {memoizedImages.map((card, cardIndex) => (
+            <div className="slide" key={card.id}>
               <img
                 src={card.image}
-                alt="slideshow_image"
+                alt={`Slideshow ${cardIndex}`}
                 className="slideshow_image"
+                data-testid={`slideshow-image-${cardIndex}`}
               />
               <h3 className="slideshow_image_Title">{card.title}</h3>
               <p className="slideshow_image_Price">{card.price} LE</p>
@@ -55,12 +96,12 @@ const Slideshow = () => {
           ))}
         </div>
         <div className="slideshowDots">
-          {SlideshowImages.map((_, idx) => (
+          {memoizedImages.map((_, dotIndex) => (
             <div
-              key={idx}
-              className={`slideshowDot${index === idx ? " active" : ""}`}
+              key={dotIndex}
+              className={`slideshowDot${index === dotIndex ? " active" : ""}`}
               onClick={() => {
-                setIndex(idx);
+                setIndex(dotIndex);
               }}
             ></div>
           ))}

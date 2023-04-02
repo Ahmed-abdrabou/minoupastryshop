@@ -11,6 +11,10 @@ import GiftBoxAnimation from "./pages/GiftBoxAnimation/GiftBoxAnimation";
 import OrderNow from "./pages/OrderNow/OrderNow";
 
 import MinouBox from "./pages/MinouBox/MinouBox";
+import Cookies from "./pages/Cookies/Cookies";
+import Brownies from "./pages/Brownies/Brownies";
+import Cupcakes from "./pages/Cupcakes/Cupcakes";
+import Eclairs from "./pages/Eclairs/Eclairs";
 import "./App.css";
 
 const App = () => (
@@ -27,6 +31,10 @@ const App = () => (
           <Route path="/CheckOutByEmail" element={<CheckOutByEmail />} />
           <Route path="/OrderNow" element={<OrderNow />} />
           <Route path="/MinouBox" element={<MinouBox />} />
+          <Route path="/Cookies" element={<Cookies />} />
+          <Route path="/Brownies" element={<Brownies />} />
+          <Route path="/Cupcakes" element={<Cupcakes />} />
+          <Route path="/Eclairs" element={<Eclairs />} />
         </Routes>
         <Footer />
       </Router>

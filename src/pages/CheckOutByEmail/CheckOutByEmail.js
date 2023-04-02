@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { ProductsItems_img } from "../../constants/ProductsItems_img";
+import { ProductsItems_compined } from "../../constants/ProductsItems_compined";
 
 import { ShopContext } from "../../container/context/shop-context";
 
@@ -107,7 +107,7 @@ export const CheckOutByEmail = () => {
                 />
 
                 <div className="CheckOut_items">
-                  {ProductsItems_img.map((product) => {
+                  {ProductsItems_compined.map((product) => {
                     if (cartItems[product.id] !== 0) {
                       return (
                         <div className="CheckOut_item">
