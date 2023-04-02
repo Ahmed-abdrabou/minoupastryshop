@@ -149,12 +149,21 @@
 }
 .app__navbar-cart-count {
   position: absolute;
-  right: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 70px;
   top: 10px;
+
+  height: 18px;
+  width: 16px;
+  border-radius: 50%;
+  /* z-index: -1; */
+  background-color: var(--orange-color);
 }
 /* } */
 .app__navbar-cart-count::after {
-  content: "";
+  /* content: "";
   position: absolute;
   border-radius: 50%;
   background-color: var(--orange-color);
@@ -164,7 +173,7 @@
 
   z-index: -1;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 .app__navbar-cart span {
   font-size: 15px;
